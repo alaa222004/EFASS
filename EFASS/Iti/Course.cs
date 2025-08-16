@@ -12,5 +12,7 @@ namespace EFASS.Iti
         public string Duration { get; set; }
         public string Description { get; set; }
         public string Name { get; set; }
+
+        public ICollection<Instructor> Instructors { get; set; } = new List<Instructor>();
     }
 }

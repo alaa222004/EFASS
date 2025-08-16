@@ -8,8 +8,8 @@ namespace EFASS.Iti
 {
     public class Stud_Course
     {
-        public int stud_ID { get; set; }
-        public int Course_ID { get; set; }
+        //public int stud_ID { get; set; }
+        //public int Course_ID { get; set; }
         public string Grade { get; set; }
     }
 }

@@ -61,8 +61,8 @@ namespace EFASS
 
             modelBuilder.Entity<Stud_Course>(builder =>
             {
-                builder.ToTable("Instructor").HasKey(x => x.stud_ID);
-                builder.Property(x => x.Course_ID).IsRequired();
+                //builder.ToTable("Instructor").HasKey(x => x.stud_ID);
+                //builder.Property(x => x.Course_ID).IsRequired();
                 builder.Property(x => x.Grade).IsRequired().HasMaxLength(50);
                
             });
@@ -70,7 +70,7 @@ namespace EFASS
             {
                 builder.ToTable("Department").HasKey(x => x.Id);
                 builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
-                builder.Property(x => x.Ins_ID).IsRequired();
+              //  builder.Property(x => x.Ins_ID).IsRequired();
              
               
             });
@@ -79,12 +79,14 @@ namespace EFASS
 
             modelBuilder.Entity<Course_Inst>(builder =>
             {
-                builder.ToTable("Course_Inst").HasKey(x => x.Course_ID);
-                builder.Property(x => x.inst_ID).IsRequired();
+                //builder.ToTable("Course_Inst").HasKey(x => x.Course_ID);
+                //builder.Property(x => x.inst_ID).IsRequired();
               
 
 
             });
+
+
 
 
         }
