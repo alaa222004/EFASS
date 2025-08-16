@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace EFASS.Models
 {
 
-    internal class Student
+    public class Student
     {
         public int Id { get; set; }
         public string FName { get; set; }
@@ -20,6 +20,8 @@ namespace EFASS.Models
         public Department Department { get; set; }
 
         public int DepartmentId {  get; set; }
+
+        public ICollection<Stud_Course> courses { get; set; }
 
 
 

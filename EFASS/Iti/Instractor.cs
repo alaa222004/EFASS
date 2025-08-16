@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EFASS.Iti
 {
-    internal class Instructor
+    public class Instructor
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -18,6 +18,8 @@ namespace EFASS.Iti
         public Department Department { get; set; }
         public int? DepartmentID { get; set; }
 
-        public ICollection<Course>courses { get; set; }=new List<Course>();
+        public ICollection<Stud_Course> courses { get; set; }
+
+
     }
 }
